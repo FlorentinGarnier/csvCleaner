@@ -85,10 +85,16 @@ if (isset($_FILES['csv']) && isset($_POST['character'])) {
         <div class="form-group">
             <label class="col-sm-2 control-label" for="character">Which character is EOL</label>
             <div class="col-sm-10">
-                <input type="text" name="character" required>
+                <input type="text" name="character" required="required">
             </div>
         </div>
-        <input class="btn btn-success" type="submit" value="Send">
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <input class="btn btn-info" type="submit" value="Send">
+            </div>
+        </div>
+
+
     </form>
     <div>
         <?php
